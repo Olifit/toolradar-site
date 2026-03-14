@@ -1,0 +1,285 @@
+{
+  "lastVerified": "2026-03-13",
+  "source": "Perplexity + team verification (Harper, Benjamin, Lucas)",
+  "tools": [
+    {
+      "name": "GetResponse",
+      "slug": "getresponse",
+      "category": "email-marketing",
+      "website": "https://www.getresponse.com",
+      "affiliate": {
+        "url": "https://www.getresponse.com/affiliate",
+        "commission": "40-60%",
+        "type": "recurring",
+        "duration": "12 months",
+        "tiers": [
+          {"name": "Bronze", "rate": "40%"},
+          {"name": "Silver", "rate": "50%"},
+          {"name": "Gold", "rate": "60%"}
+        ],
+        "cookieDays": 30,
+        "payoutMin": null,
+        "approval": "automatic",
+        "status": "active"
+      },
+      "germanSupport": true,
+      "priority": 1,
+      "tagline": "E-Mail-Marketing mit bis zu 60% wiederkehrender Provision",
+      "notes": "Deutsch-Support, hohe Tiers, automatischer Zugang"
+    },
+    {
+      "name": "SE Ranking",
+      "slug": "se-ranking",
+      "category": "seo",
+      "website": "https://seranking.com",
+      "affiliate": {
+        "url": "https://seranking.com/affiliate.html",
+        "commission": "30%",
+        "type": "recurring",
+        "duration": "lifetime",
+        "cookieDays": 120,
+        "payoutMin": null,
+        "approval": "automatic",
+        "status": "active"
+      },
+      "germanSupport": true,
+      "priority": 1,
+      "tagline": "SEO-Tool mit 30% lebenslanger Provision und 120-Tage-Cookie",
+      "notes": "Deutsche UI, 120 Tage Cookie, automatischer Zugang, stabiler SEO-Tool"
+    },
+    {
+      "name": "Murf AI",
+      "slug": "murf-ai",
+      "category": "audio",
+      "website": "https://murf.ai",
+      "affiliate": {
+        "url": "https://murf.ai/affiliate",
+        "commission": "20%",
+        "type": "recurring",
+        "duration": "24 months",
+        "cookieDays": 30,
+        "payoutMin": 5,
+        "approval": "automatic",
+        "status": "active"
+      },
+      "germanSupport": true,
+      "priority": 1,
+      "tagline": "AI-Text-to-Speech mit deutschen Stimmen",
+      "notes": "Deutsche Stimmen, $5 Auszahlungsschwelle, offen für alle"
+    },
+    {
+      "name": "Tidio",
+      "slug": "tidio",
+      "category": "chatbots",
+      "website": "https://www.tidio.com",
+      "affiliate": {
+        "url": "https://www.tidio.com/affiliate-program",
+        "commission": "30%",
+        "type": "recurring",
+        "duration": "lifetime",
+        "cookieDays": 30,
+        "payoutMin": null,
+        "approval": "automatic",
+        "status": "active"
+      },
+      "germanSupport": true,
+      "priority": 1,
+      "tagline": "KI-Chatbot mit 30% lebenslanger Provision",
+      "notes": "KI-Chatbot Lyro, mehrsprachig, offen für alle, gute Conversion"
+    },
+    {
+      "name": "Rytr",
+      "slug": "rytr",
+      "category": "text-generation",
+      "website": "https://rytr.me",
+      "affiliate": {
+        "url": "https://rytr.me/affiliate",
+        "commission": "30%",
+        "type": "recurring",
+        "duration": "lifetime",
+        "cookieDays": 30,
+        "payoutMin": null,
+        "approval": "automatic",
+        "status": "active"
+      },
+      "germanSupport": true,
+      "priority": 2,
+      "tagline": "Günstiger AI-Text-Generator mit lebenslanger Provision",
+      "notes": "Super günstig + Deutsch"
+    },
+    {
+      "name": "Zebracat",
+      "slug": "zebracat",
+      "category": "video",
+      "website": "https://www.zebracat.com",
+      "affiliate": {
+        "url": null,
+        "commission": "30%",
+        "type": "recurring",
+        "duration": "lifetime",
+        "cookieDays": 30,
+        "payoutMin": null,
+        "approval": null,
+        "status": "active"
+      },
+      "germanSupport": false,
+      "priority": 2,
+      "tagline": "Video-KI mit lebenslanger Provision",
+      "notes": "Video-KI-Alternative"
+    },
+    {
+      "name": "Jasper AI",
+      "slug": "jasper",
+      "category": "text-generation",
+      "website": "https://www.jasper.ai",
+      "affiliate": {
+        "url": "https://www.jasper.ai/affiliate",
+        "commission": "25-30%",
+        "type": "recurring",
+        "duration": "12 months",
+        "cookieDays": 30,
+        "payoutMin": null,
+        "approval": "manual",
+        "status": "active"
+      },
+      "germanSupport": true,
+      "priority": 2,
+      "tagline": "Marktführender AI-Marketing-Text-Generator",
+      "notes": "Starke Marke, etabliert"
+    },
+    {
+      "name": "Synthesia",
+      "slug": "synthesia",
+      "category": "video",
+      "website": "https://www.synthesia.io",
+      "affiliate": {
+        "url": "https://www.synthesia.io/affiliate",
+        "commission": "25%",
+        "type": "recurring",
+        "duration": "starter-creator-only",
+        "cookieDays": 30,
+        "payoutMin": null,
+        "approval": "manual",
+        "status": "active"
+      },
+      "germanSupport": true,
+      "priority": 2,
+      "tagline": "AI-Video mit deutschen Avataren",
+      "notes": "Deutsche Avatare, recurring auf Starter/Creator, nicht lifetime"
+    },
+    {
+      "name": "Leonardo AI",
+      "slug": "leonardo-ai",
+      "category": "image-generation",
+      "website": "https://leonardo.ai",
+      "affiliate": {
+        "url": null,
+        "commission": "60%",
+        "type": "one-time",
+        "duration": "first-month-only",
+        "cookieDays": 30,
+        "payoutMin": null,
+        "approval": null,
+        "status": "active"
+      },
+      "germanSupport": false,
+      "priority": 2,
+      "tagline": "AI-Bildgenerierung mit 60% Erstmonats-Provision",
+      "notes": "60% auf den ersten Monat (einmalig, aber hoch)"
+    },
+    {
+      "name": "Pictory",
+      "slug": "pictory",
+      "category": "video",
+      "website": "https://pictory.ai",
+      "affiliate": {
+        "url": null,
+        "commission": "bis 50%",
+        "type": "recurring",
+        "duration": "lifetime",
+        "cookieDays": 30,
+        "payoutMin": null,
+        "approval": null,
+        "status": "active"
+      },
+      "germanSupport": false,
+      "priority": 2,
+      "tagline": "AI-Video-Erstellung mit bis zu 50% Provision",
+      "notes": "High-Volume-Partner"
+    },
+    {
+      "name": "Scalenut",
+      "slug": "scalenut",
+      "category": "seo",
+      "website": "https://www.scalenut.com",
+      "affiliate": {
+        "url": null,
+        "commission": "bis 50%",
+        "type": "recurring",
+        "duration": "lifetime",
+        "cookieDays": 30,
+        "payoutMin": null,
+        "approval": null,
+        "status": "active"
+      },
+      "germanSupport": false,
+      "priority": 2,
+      "tagline": "SEO-Content-Plattform mit bis zu 50% Provision",
+      "notes": "High-Volume-Partner"
+    },
+    {
+      "name": "Writesonic",
+      "slug": "writesonic",
+      "category": "text-generation",
+      "website": "https://writesonic.com",
+      "affiliate": {
+        "url": null,
+        "commission": "30%",
+        "type": "recurring",
+        "duration": "lifetime",
+        "cookieDays": 30,
+        "payoutMin": null,
+        "approval": null,
+        "status": "active"
+      },
+      "germanSupport": false,
+      "priority": 3,
+      "tagline": "AI-Text-Generator mit 30% lebenslanger Provision",
+      "notes": "Cookie von 90 auf 30 Tage reduziert"
+    }
+  ],
+  "closed": [
+    {
+      "name": "TextCortex",
+      "status": "sunsetted",
+      "notes": "Programm komplett eingestellt"
+    },
+    {
+      "name": "Notion",
+      "status": "closed-to-new",
+      "notes": "Geschlossen für neue Affiliates; nur $50 + 20% Year-1 für Bestands-Affiliates"
+    }
+  ],
+  "changed": [
+    {
+      "name": "Surfer SEO",
+      "oldType": "recurring",
+      "newType": "tiered-cpa",
+      "newRate": "75-125% of first payment",
+      "notes": "Nicht mehr recurring, jetzt CPA"
+    }
+  ],
+  "stats": {
+    "total": 29,
+    "recurring": 23,
+    "recurringPercent": 79,
+    "lifetime": 11,
+    "lifetimePercent": 38,
+    "avgCommission": "29-31%",
+    "highestRecurring": "60% (GetResponse Gold, 12 months)",
+    "longestCookie": "120 days (SE Ranking)",
+    "lowestPayoutMin": "$5 (Murf AI)",
+    "germanSupportCount": 14,
+    "germanSupportPercent": 48
+  }
+}
