@@ -50,11 +50,8 @@ export default function RootLayout({
               <a href="/tools" className="hover:text-gray-900">
                 Alle Tools
               </a>
-              <a href="/kategorien" className="hover:text-gray-900">
+              <a href="/#kategorien" className="hover:text-gray-900">
                 Kategorien
-              </a>
-              <a href="/blog" className="hover:text-gray-900">
-                Blog
               </a>
             </div>
           </nav>
