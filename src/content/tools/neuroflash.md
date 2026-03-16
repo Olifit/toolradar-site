@@ -4,6 +4,8 @@ tagline: "Der führende deutsche KI-Textgenerator"
 description: "neuroflash ist der führende deutsche KI-Textgenerator — entwickelt in Deutschland, optimiert für deutsche Textqualität, DSGVO-konform. Mit über 100 Templates, integriertem KI-Bildgenerator und einem Fokus auf den DACH-Markt."
 category: text-generation
 website: https://neuroflash.com
+affiliateUrl: "https://neuroflash.com/affiliate-partners/"
+affiliatePartner: "neuroflash"
 pricing: '[{"name":"Basic","price":"30","period":"mo","features":["100+ Templates","Bildgenerator","SEO-Optimierung","Deutsch-optimiert"]},{"name":"Pro","price":"80","period":"mo","features":["Alles aus Basic","Unbegrenzte Wörter","Priorisierter Support","API-Zugang"]},{"name":"Enterprise","price":"Custom","features":["Alles aus Pro","Dedicated Manager","SLA","Custom Templates"]}]'
 features: '["100+ Vorlagen (Templates)","KI-Bildgenerator integriert","SEO-Integration","Brand Voice","Deutsche Grammatik-Optimierung","Content Kalender","Team-Funktionen"]'
 pros: '["Beste deutsche Textqualität","DSGVO-konform, EU-Server","100+ fertige Templates","Integrierter Bildgenerator","DACH-Fokus"]'

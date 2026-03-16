@@ -3,7 +3,7 @@ title: Hetzner Cloud
 tagline: "Deutsches Cloud-Hosting mit unschlagbarem Preis-Leistungs-Verhältnis"
 description: "Hetzner Cloud bietet günstiges, leistungsstarkes Cloud-Hosting von deutschen Rechenzentren. Ideal für Entwickler und Unternehmen die DSGVO-konforme Infrastruktur brauchen."
 category: hosting
-website: https://www.hetzner.com/cloud
+website: https://www.hetzner.com
 pricing: '[{"name":"CX11","price":"3","period":"mo","features":["2 vCPU","4 GB RAM","40 GB SSD","20 TB Traffic"]},{"name":"CX31","price":"12","period":"mo","features":["4 vCPU","8 GB RAM","80 GB SSD","20 TB Traffic"]},{"name":"CX51","price":"30","period":"mo","features":["8 vCPU","32 GB RAM","240 GB SSD","20 TB Traffic"]},{"name":"CPX51","price":"40","period":"mo","features":["16 vCPU","32 GB RAM","360 GB SSD","20 TB Traffic"]}]'
 features: '["Cloud Server","Managed Kubernetes","Load Balancer","Object Storage","Block Storage","Firewall","Floating IPs","Backups","API & CLI","Server für 3€/Monat"]'
 pros: '["Unschlagbares Preis-Leistungs-Verhältnis","Deutsche Rechenzentren","DSGVO-konform","20 TB Traffic inklusive","Schnelle NVMe SSDs","Hervorragender Support"]'

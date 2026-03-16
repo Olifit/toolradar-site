@@ -2,6 +2,27 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getToolsByCategory, getCategories } from "@/lib/tools";
 
+const CATEGORY_LABELS: Record<string, string> = {
+  "text-generation": "Text & KI-Schreiben",
+  "bildgenerierung": "Bildgenerierung",
+  "audio-video": "Audio & Video",
+  "seo": "SEO-Tools",
+  "email-marketing": "E-Mail-Marketing",
+  "produktivitaet": "Produktivität",
+  "chatbots": "KI-Chatbots",
+  "code": "Code & Entwicklung",
+  "design": "Design",
+  "social": "Social Media",
+  "uebersetzung": "Übersetzung",
+  "analytics": "Analytics",
+  "hosting": "Cloud-Hosting",
+  "email": "E-Mail & Datenschutz",
+  "business-software": "Business-Software",
+  "audio": "Audio & Text-to-Speech",
+  "video": "KI-Video",
+  "image-generation": "Bildgenerierung",
+};
+
 export const revalidate = 3600;
 
 export async function generateStaticParams() {
@@ -14,9 +35,10 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
+  const label = CATEGORY_LABELS[slug] ?? slug;
   return {
-    title: `${slug} – AI-Tools vergleichen`,
-    description: `Die besten AI-Tools in der Kategorie ${slug}. Ehrliche Tests und transparente Preise.`,
+    title: `${label} – AI-Tools vergleichen`,
+    description: `Die besten AI-Tools für ${label} im DACH-Raum. Ehrliche Tests, transparente Preise, DSGVO-konform.`,
   };
 }
 
@@ -34,10 +56,10 @@ export default async function CategoryPage({
       <nav className="mb-6 text-sm text-gray-500">
         <a href="/" className="hover:text-gray-700">Home</a> /{" "}
         <a href="/tools" className="hover:text-gray-700">Tools</a> /{" "}
-        <span className="text-gray-900">{slug}</span>
+        <span className="text-gray-900">{CATEGORY_LABELS[slug] ?? slug}</span>
       </nav>
 
-      <h1 className="mb-2 text-3xl font-bold capitalize">{slug}</h1>
+      <h1 className="mb-2 text-3xl font-bold">{CATEGORY_LABELS[slug] ?? slug}</h1>
       <p className="mb-8 text-gray-600">
         {tools.length} {tools.length === 1 ? "Tool" : "Tools"} in dieser Kategorie
       </p>

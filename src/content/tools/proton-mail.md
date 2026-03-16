@@ -3,7 +3,7 @@ title: Proton Mail
 tagline: "Verschlüsselte E-Mail aus der Schweiz"
 description: "Proton Mail ist der führende verschlüsselte E-Mail-Anbieter aus der Schweiz. Ende-zu-Ende-Verschlüsselung, strikter Datenschutz und Schweizer Rechtsprechung."
 category: email
-website: https://proton.me/mail
+website: https://proton.me
 pricing: '[{"name":"Free","price":"0","features":["1 GB Speicher","1 E-Mail-Adresse","150 Nachrichten/Tag","Ende-zu-Ende-Verschlüsselung"]},{"name":"Mail Plus","price":"5","period":"mo","features":["15 GB Speicher","10 E-Mail-Adressen","Unbegrenzte Nachrichten","Kalender inklusive","Custom Domain"]},{"name":"Proton Business","price":"13","period":"mo","features":["500 GB Speicher","15 Adressen/User","Catch-All Domain","Admin-Konsole","VPN inklusive"]}]'
 features: '["Ende-zu-Ende-Verschlüsselung","Zero-Access-Verschlüsselung","Schweizer Datenschutz","Custom Domain","Kalender (Proton Calendar)","VPN (Proton VPN)","Drive-Speicher","Passwort-Manager (Proton Pass)"]'
 pros: '["Stärkster Datenschutz (Schweiz)","Verschlüsselung garantiert","Keine IP-Logs","Open Source","Ökosystem (VPN, Calendar, Drive)","DSGVO-konform"]'
