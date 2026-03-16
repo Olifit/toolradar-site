@@ -41,24 +41,24 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <header className="border-b border-gray-200 bg-white">
+        <header className="border-b border-base bg-card sticky top-0 z-40 backdrop-blur-sm">
           <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-            <a href="/" className="text-xl font-bold text-gray-900">
-              toolradar<span className="text-blue-600">.de</span>
+            <a href="/" className="text-xl font-bold text-base">
+              toolradar<span className="text-blue">.de</span>
             </a>
-            <div className="flex gap-6 text-sm text-gray-600">
-              <a href="/tools" className="hover:text-gray-900">
+            <div className="flex gap-6 text-sm text-muted">
+              <a href="/tools" className="hover:text-base transition-colors">
                 Alle Tools
               </a>
-              <a href="/#kategorien" className="hover:text-gray-900">
+              <a href="/#kategorien" className="hover:text-base transition-colors">
                 Kategorien
               </a>
             </div>
           </nav>
         </header>
         <main className="mx-auto max-w-6xl px-6 py-8">{children}</main>
-        <footer className="border-t border-gray-200 bg-gray-50">
-          <div className="mx-auto max-w-6xl px-6 py-8 text-sm text-gray-500">
+        <footer className="border-t border-base bg-subtle">
+          <div className="mx-auto max-w-6xl px-6 py-8 text-sm text-muted">
             <p>© 2026 toolradar.de — Ein IGNOVA Projekt</p>
             <p className="mt-1">
               Affiliate-Hinweis: Wir provisionieren über Partner-Links. Für dich

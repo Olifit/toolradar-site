@@ -74,40 +74,29 @@ export default async function ToolPage({
       />
 
       {/* Breadcrumb */}
-      <nav className="mb-6 text-sm text-gray-500">
-        <a href="/" className="hover:text-gray-700">
-          Home
-        </a>{" "}
+      <nav className="mb-6 text-sm text-muted">
+        <a href="/" className="hover:text-base transition-colors">Home</a>{" "}
         /{" "}
-        <a href="/tools" className="hover:text-gray-700">
-          Tools
-        </a>{" "}
+        <a href="/tools" className="hover:text-base transition-colors">Tools</a>{" "}
         /{" "}
-        <a href={`/kategorie/${tool.category}`} className="hover:text-gray-700">
+        <a href={`/kategorie/${tool.category}`} className="hover:text-base transition-colors">
           {tool.category}
         </a>{" "}
-        / <span className="text-gray-900">{tool.name}</span>
+        / <span className="text-base">{tool.name}</span>
       </nav>
 
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900">{tool.name}</h1>
-        <p className="mt-2 text-lg text-gray-600">{tool.tagline}</p>
+        <h1 className="text-3xl font-bold text-base">{tool.name}</h1>
+        <p className="mt-2 text-lg text-muted">{tool.tagline}</p>
         {tool.rating && (
           <div className="mt-2 flex items-center gap-1">
             {Array.from({ length: 5 }).map((_, i) => (
-              <span
-                key={i}
-                className={
-                  i < (tool.rating ?? 0) ? "text-yellow-400" : "text-gray-300"
-                }
-              >
+              <span key={i} className={i < (tool.rating ?? 0) ? "text-amber-dm" : "text-faint"}>
                 ★
               </span>
             ))}
-            <span className="ml-2 text-sm text-gray-500">
-              {tool.rating}/5
-            </span>
+            <span className="ml-2 text-sm text-muted">{tool.rating}/5</span>
           </div>
         )}
       </div>
@@ -115,25 +104,22 @@ export default async function ToolPage({
       {/* Pricing Cards */}
       {tool.pricing.length > 0 && (
         <section className="mb-8">
-          <h2 className="mb-4 text-xl font-semibold">Preise</h2>
+          <h2 className="mb-4 text-xl font-semibold text-base">Preise</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {tool.pricing.map((tier) => (
-              <div
-                key={tier.name}
-                className="rounded-lg border border-gray-200 p-4"
-              >
-                <h3 className="font-medium">{tier.name}</h3>
-                <p className="mt-1 text-2xl font-bold">
-                  {tier.price}
+              <div key={tier.name} className="card p-4">
+                <h3 className="font-medium text-base">{tier.name}</h3>
+                <p className="mt-1 text-2xl font-bold text-base">
+                  {tier.price === "0" ? "Kostenlos" : `${tier.price}€`}
                   {tier.period && (
-                    <span className="text-sm font-normal text-gray-500">
+                    <span className="text-sm font-normal text-muted">
                       /{tier.period === "mo" ? "Monat" : "Jahr"}
                     </span>
                   )}
                 </p>
-                <ul className="mt-3 space-y-1 text-sm text-gray-600">
+                <ul className="mt-3 space-y-1 text-sm text-muted">
                   {tier.features.map((f) => (
-                    <li key={f}>✓ {f}</li>
+                    <li key={f} className="flex gap-2"><span className="text-green-dm">✓</span>{f}</li>
                   ))}
                 </ul>
               </div>
@@ -143,34 +129,28 @@ export default async function ToolPage({
       )}
 
       {/* Description */}
-      <section className="prose mb-8 max-w-none">
+      <section className="prose prose-neutral dark:prose-invert mb-8 max-w-none text-base">
         <div dangerouslySetInnerHTML={{ __html: tool.description }} />
       </section>
 
       {/* Pros / Cons */}
       <div className="mb-8 grid gap-6 sm:grid-cols-2">
-        <div>
-          <h2 className="mb-3 text-lg font-semibold text-green-700">
-            Vorteile
-          </h2>
+        <div className="card p-5">
+          <h2 className="mb-3 text-lg font-semibold text-green-dm">Vorteile</h2>
           <ul className="space-y-2">
             {tool.pros.map((p) => (
-              <li key={p} className="flex gap-2 text-sm">
-                <span className="text-green-500">+</span>
-                {p}
+              <li key={p} className="flex gap-2 text-sm text-base">
+                <span className="text-green-dm font-bold">+</span>{p}
               </li>
             ))}
           </ul>
         </div>
-        <div>
-          <h2 className="mb-3 text-lg font-semibold text-red-700">
-            Nachteile
-          </h2>
+        <div className="card p-5">
+          <h2 className="mb-3 text-lg font-semibold text-red-dm">Nachteile</h2>
           <ul className="space-y-2">
             {tool.cons.map((c) => (
-              <li key={c} className="flex gap-2 text-sm">
-                <span className="text-red-500">-</span>
-                {c}
+              <li key={c} className="flex gap-2 text-sm text-base">
+                <span className="text-red-dm font-bold">−</span>{c}
               </li>
             ))}
           </ul>
@@ -178,22 +158,22 @@ export default async function ToolPage({
       </div>
 
       {/* CTA */}
-      <div className="rounded-lg bg-blue-50 p-6 text-center">
+      <div className="card bg-accent p-6 text-center">
         <a
           href={affiliateUrl}
           target="_blank"
           rel="nofollow sponsored noopener"
-          className="inline-block rounded-lg bg-blue-600 px-8 py-3 text-lg font-semibold text-white hover:bg-blue-700"
+          className="btn-primary inline-block rounded-lg px-8 py-3 text-lg font-semibold"
         >
           {tool.name} ausprobieren →
         </a>
-        <p className="mt-2 text-xs text-gray-500">
+        <p className="mt-2 text-xs text-muted">
           Affiliate-Link — Für dich entstehen keine Mehrkosten.
         </p>
       </div>
 
       {/* Last updated */}
-      <p className="mt-6 text-right text-xs text-gray-400">
+      <p className="mt-6 text-right text-xs text-faint">
         Zuletzt aktualisiert: {tool.lastUpdated}
       </p>
     </>

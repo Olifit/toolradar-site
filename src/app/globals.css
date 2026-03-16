@@ -1,26 +1,91 @@
 @import "tailwindcss";
 
+/* ─── Light Mode ─────────────────────────────────────────────────────────── */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg:           #ffffff;
+  --bg-subtle:    #f9fafb;
+  --bg-card:      #ffffff;
+  --bg-accent:    #eff6ff;
+  --border:       #e5e7eb;
+  --border-hover: #93c5fd;
+  --text:         #111827;
+  --text-muted:   #6b7280;
+  --text-faint:   #9ca3af;
+  --blue:         #2563eb;
+  --blue-hover:   #1d4ed8;
+  --blue-text:    #2563eb;
+  --green:        #15803d;
+  --red:          #b91c1c;
+  --amber:        #d97706;
+  --hero-from:    #eff6ff;
+  --hero-to:      #eef2ff;
+}
+
+/* ─── Dark Mode ──────────────────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:           #0f1117;
+    --bg-subtle:    #161b27;
+    --bg-card:      #1a2032;
+    --bg-accent:    #1e2d4a;
+    --border:       #2a3347;
+    --border-hover: #3b82f6;
+    --text:         #f1f5f9;
+    --text-muted:   #94a3b8;
+    --text-faint:   #64748b;
+    --blue:         #3b82f6;
+    --blue-hover:   #60a5fa;
+    --blue-text:    #60a5fa;
+    --green:        #4ade80;
+    --red:          #f87171;
+    --amber:        #fbbf24;
+    --hero-from:    #1e2d4a;
+    --hero-to:      #1a1f3a;
+  }
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ─── Semantic utility classes ───────────────────────────────────────────── */
+.bg-page        { background-color: var(--bg); }
+.bg-subtle      { background-color: var(--bg-subtle); }
+.bg-card        { background-color: var(--bg-card); }
+.bg-accent      { background-color: var(--bg-accent); }
+.border-base    { border-color: var(--border); }
+.border-hover:hover { border-color: var(--border-hover); }
+.text-base      { color: var(--text); }
+.text-muted     { color: var(--text-muted); }
+.text-faint     { color: var(--text-faint); }
+.text-blue      { color: var(--blue-text); }
+.text-green-dm  { color: var(--green); }
+.text-red-dm    { color: var(--red); }
+.text-amber-dm  { color: var(--amber); }
+.btn-primary {
+  background-color: var(--blue);
+  color: #fff;
+  transition: background-color 0.15s;
+}
+.btn-primary:hover { background-color: var(--blue-hover); }
+.hero-gradient  { background: linear-gradient(135deg, var(--hero-from), var(--hero-to)); }
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
